@@ -1,0 +1,113 @@
+:root {
+    --pc: #4F4F4F;
+    --pc2: #333333;
+    --sc: #FF7D04;
+    --wc: #ffffff;
+    --bc: #000000;
+    --gc: #cccccc;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--pc);
+    /*    font-family: 'Roboto', sans-serif;*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+p {
+    line-height: 24px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--pc);
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--pc);
+}
+
+button {
+    border: none;
+}
+
+
+.custom-row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.custom-row::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.section-title h2 {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 65px;
+}
+.section-title h2 span{
+    color: var(--sc);
+}
+.section-title h2::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: var(--gc);
+    margin: 0 auto;
+    margin-top: 15px;
+    
+}
+
+.custom-btn {
+    background: #FF7D04;
+    color: var(--wc);
+    text-transform: capitalize;
+    padding: 10px 25px;
+    display: inline-block;
+}
+.custom-btn:hover{
+    background: rgba(255, 125, 4, 0.91);
+    color: var(--wc);
+}
+.section-page-title h2{
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 65px;
+    color: var(--sc2);
+    padding-bottom: 15px;
+}
+.border-bottom{
+    border-bottom: 1px solid var(--gc);
+}
+
